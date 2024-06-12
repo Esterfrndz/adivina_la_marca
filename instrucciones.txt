@@ -1,0 +1,11 @@
+El juego consiste en que aparece una imagen aleatoria de una moto y tienes que elegir entre los botones con las marcas 
+
+
+Para generar las imagenes usaremos random();
+
+
+Para añadir puntos:
+
+1.Crear un elemento en el HMTL que es dónde va a aparecer el elemento
+2.En el script hacer un document.getElementById de ese elemento 
+3.En el if de respuesta correcta cuando acierte una respuesta correcta se haga ++ en el valor de ese elemento 

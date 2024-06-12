@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivina la Marca de la Moto</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="navbar bg-base-100">
+      <!-- Titulo -->
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl">Adivina la marca</a>
+      </div>
+      <div class="flex-none">
+        <!-- Contador -->
+        <div class="contador">
+          <p>Puntos</p>
+          <input
+            type="number"
+            id="contadorPuntos"
+            class="input input-bordered input-secondary w-full max-w-xs"
+            value="0"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Contenedor de alertas -->
+      <div id="alertContainer" class="alert-container"></div>
+      <!-- Imagen moto -->
+      <img id="motoImg" class="motoImg" src="" alt="Moto a Adivinar" />
+      <!-- Barra progreso -->
+      <div class="progreso-container">
+        <progress
+          id="barraProgreso"
+          class="progress progress-secondary w-56"
+          value="0"
+          max="12"
+        ></progress>
+      </div>
+      <!-- Botones -->
+      <div id="botones" class="botones">
+        <button onclick="verificarRespuesta(this) ">Honda</button>
+        <button onclick="verificarRespuesta(this)">Suzuki</button>
+        <button onclick="verificarRespuesta(this)">Yamaha</button>
+        <button onclick="verificarRespuesta(this)">Kawasaki</button>
+      </div>
+    </div>
+
+    <!-- Audio alert -->
+    <audio id="alertSound" src="./img/alert.mp3" preload="auto"></audio>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
