@@ -26,7 +26,7 @@ let motosRestantes = [...motos];
 let respuestaCorrecta;
 let contadorImagenes = 0;
 let puntos = 0;
-const maxImagenes = 12;
+const maxImagenes = 14;
 let contadorBloqueado = false;
 
 //Elementos del DOM
